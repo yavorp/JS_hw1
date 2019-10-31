@@ -30,7 +30,9 @@ class Graph {
             q.sort((el1, el2) => el1.weight > el2.weight ? 1: -1);
             let currentPath = q[0];
             q.splice(0, 1);
-            if(visited[currentPath.vertex]) continue;
+            if(visited[currentPath.vertex]){
+                continue;
+            }
             let parent = currentPath.vertex;
             visited[parent] = true;
             let currentNode = this.adjList[parent]

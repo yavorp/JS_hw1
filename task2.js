@@ -6,4 +6,5 @@ function jumpingJimmy(tower, jumpHeight) {
         }
         currentHeight+=element;
     });
+    return currentHeight;
 }

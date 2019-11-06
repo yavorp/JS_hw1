@@ -57,9 +57,9 @@ fs.readFile('./test.txt', 'utf-8', (error, data) => {
     let lines = data.split(/\n+/g);
     let graph = new Graph();
     lines.forEach(line => {
-        [v1,v2,shit] = line.split(/\s+/g);
-        if(shit != '?') {
-            graph.addPath(v1,v2,parseInt(shit));
+        [v1,v2,weight] = line.split(/\s+/g);
+        if(weight != '?') {
+            graph.addPath(v1,v2,parseInt(weight));
         } else {
             console.log(`${v1} ${v2} ${graph.dijkstra(v1)[v2 - 1]}`);
         }

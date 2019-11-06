@@ -1,4 +1,4 @@
-# JS_nb_hw1
+# JS_hw1
 
 For task1.js the input file has this format
 
